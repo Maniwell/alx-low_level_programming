@@ -1,9 +1,9 @@
 #include <stdio.h>
 /**
-* Main - Main entry point
+* main - Main entry point
 * The program prints string of characters using the printf function
 *
-* Return success - Always returns 0
+* Return: success - Always returns 0
 */
 int main(void)
 {

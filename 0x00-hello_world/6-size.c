@@ -2,7 +2,7 @@
 /**
 * main - The programe Entry point
 * the programe gives the sizes of data types
-* return: Always 0 (Success)
+* Return: Always 0 (Success)
 */
 int main(void)
 {
