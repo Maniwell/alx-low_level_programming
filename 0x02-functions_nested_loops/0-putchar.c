@@ -1,6 +1,6 @@
 #include "main.h"
-#include <stdio.h>
 #include <unistd.h>
+
 /**
   *main - is a function that prints _putchar
   *Return - if 0 success
@@ -17,7 +17,7 @@ int main(void)
 	_putchar('h');
 	_putchar('a');
 	_putchar('r');
-	printf("\n");
+	_putchar('\n');
 	return (0);
 }
 
@@ -25,4 +25,3 @@ int _putchar(char c)
 {
 	return (write(1, &c, 1));
 }
-
