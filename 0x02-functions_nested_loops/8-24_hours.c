@@ -1,17 +1,29 @@
 #include "main.h"
-
+/**
+  * jack_bauer - prints every minute in 24 hours
+  *
+  * Return: void
+  *
+  **/
 
 void jack_bauer(void)
 {
-	int hour;
+	int hour, minute;
 
-	for (hour = 0; hour < 24; hour++)
+	hour = 0;
+	while (hour < 24)
 	{
-		int min;
-		 
-		for (min = 0; min < 60; min++)
+		minute = 0;
+		while (minute < 60)
 		{
-			_putchar("%02d:%02d", hour, min);
+			_putchar((hour / 10) + '0');
+			_putchar((hour % 10) + '0');
+			_putchar(':');
+			_putchar((minute / 10) + '0');
+			_putchar((minute % 10) + '0');
+			_putchar('\n');
+			minute++;
 		}
+		hour++;
 	}
 }

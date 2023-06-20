@@ -10,7 +10,8 @@
 
 int print_last_digit(int num)
 {
-	int last_digit = num % 10;
+	int abs_ld = abs(num);
+	int last_digit = abs_ld % 10;
 
-	return (last_digit);
+	return (last_digit + 48);
 }
