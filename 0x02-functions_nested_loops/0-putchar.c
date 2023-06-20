@@ -1,11 +1,8 @@
 #include "main.h"
-#include <unistd.h>
-
 /**
   *main - is a function that prints _putchar
   *Return - if 0 success
   **/
-int _putchar(char c);
 
 int main(void)
 {
@@ -19,9 +16,4 @@ int main(void)
 	_putchar('r');
 	_putchar('\n');
 	return (0);
-}
-
-int _putchar(char c)
-{
-	return (write(1, &c, 1));
 }
