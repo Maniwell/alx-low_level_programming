@@ -1,7 +1,8 @@
 #include "main.h"
 /**
-  *main - is a function that prints _putchar
-  *Return - if 0 success
+  *main - is a function that prints _putchar by
+  * calling the function _putchar from library main.h
+  * Return: if 0 success
   **/
 
 int main(void)
