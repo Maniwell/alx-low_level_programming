@@ -8,9 +8,10 @@
   */
 int main(void)
 {
+	int num;
 	unsigned long f1 = 0, f2 = 1, sum;
 
-	for (int num = 0; num < 50; num++)
+	for (num = 0; num < 100; num++)
 	{
 		sum = f1 + f2;
 		printf("%lu", sum);
