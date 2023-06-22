@@ -7,8 +7,8 @@
 
 int main(void)
 {
-	long long n = 612852475143;
-	long long i, maxPrime;
+	long n = 612852475143;
+	long i, maxPrime;
 
 	while (n % 2 == 0)
 	{
