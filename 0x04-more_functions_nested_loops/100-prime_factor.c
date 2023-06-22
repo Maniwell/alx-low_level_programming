@@ -1,4 +1,9 @@
 #include <stdio.h>
+/**
+  * main - print the largest prime factor of n
+  *
+  * Return: if 0 success
+  */
 
 int main(void)
 {
@@ -24,5 +29,5 @@ int main(void)
 	}
 	printf("The largest prime factor of %lld is %lld\n", 612852475143, maxPrime);
 
-	return 0;
+	return (0);
 }
