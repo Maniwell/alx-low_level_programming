@@ -38,7 +38,7 @@ int main(void)
 	max = n;
 
 	/* Print the largest prime factor */
-	printf("The largest prime factor of %ld is %ld\n", 612852475143, max);
+	printf("%ld\n", max);
 
 	return (0);
 }
