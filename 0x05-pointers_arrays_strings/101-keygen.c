@@ -2,19 +2,30 @@
 #include <stdlib.h>
 #include <time.h>
 
-int main() 
+int PASSWORD_LENGTH = 30;
+
+int main(void)
 {
-	char password[7];
-	char charset[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
-	int len = sizeof(charset) - 1;
+	    char charset[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$^&*()_+}{|:?><|~/.,;'][-=]}";
+	        int len = sizeof(charset) - 1;
+		    char password[PASSWORD_LENGTH + 1];
+		        int sum = 0;
 
-	srand(time(NULL));
+			    srand(time(NULL));
 
-	for (int i = 0; i < 6; i++)
-	{
-	password[i] = charset[rand() % len];
-	}
-	password[6] = '\0';
+			        for (int i = 0; i < PASSWORD_LENGTH; i++) {
+					        password[i] = charset[rand() % len];
+						        sum += password[i];
+							    }
 
-	return 0;
+				    password[PASSWORD_LENGTH] = '\0';
+
+				        if (sum % 62 != 0) {
+						        password[rand() % PASSWORD_LENGTH] = charset[sum % 62];
+							    }
+
+					    printf("%s\n", password);
+					        putchar('\n');
+
+						    return 0;
 }
