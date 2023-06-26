@@ -2,30 +2,35 @@
 #include <stdlib.h>
 #include <time.h>
 
-int PASSWORD_LENGTH = 30;
-
+/**
+   * main - is a funtion that generates random password
+    *
+     * Return: Always 0 (Success)
+      */
 int main(void)
 {
-	    char charset[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$^&*()_+}{|:?><|~/.,;'][-=]}";
-	        int len = sizeof(charset) - 1;
-		    char pass[PASSWORD_LENGTH];
-		        int i, sum = 0;
+		int pass[120];
+			int i, sum, n;
 
-			    srand(time(NULL));
+				sum = 0;
 
-			        for ( i = 0; i < PASSWORD_LENGTH; i++) {
-					        pass[i] = charset[rand() % len];
-						        sum += pass[i];
-							    }
+					srand(time(NULL));
 
-				    pass[PASSWORD_LENGTH] = '\0';
+						for (i = 0; i < 120; i++)
+								{
+											pass[i] = rand() % 51;
+													sum += (pass[i] + '0');
+															putchar(pass[i] + '0');
+																	if ((2772 - sum) - '0' < 51)
+																				{
+n = 2772 - sum - '0';
+			sum += n;
+																	putchar(n + '0');
+																break;
+													}
+																		}
 
-				        if (sum % 62 != 0) {
-						        pass[rand() % PASSWORD_LENGTH] = charset[sum % 62];
-							    }
+						    putchar('\n');
 
-					    printf("%s\n", pass);
-					        putchar('\n');
-
-						    return 0;
+						    	return (0);
 }
