@@ -8,7 +8,7 @@ int main(void)
 {
 	    char charset[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$^&*()_+}{|:?><|~/.,;'][-=]}";
 	        int len = sizeof(charset) - 1;
-		    char pass[PASSWORD_LENGTH + 1];
+		    char pass[PASSWORD_LENGTH];
 		        int i, sum = 0;
 
 			    srand(time(NULL));
