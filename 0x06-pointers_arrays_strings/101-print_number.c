@@ -2,7 +2,8 @@
 /**
   * print_number - prints integers
   *
-  * Return - Void
+  * @n: integer to be printed
+  * Return: Void
   */
 
 void print_number(int n)
