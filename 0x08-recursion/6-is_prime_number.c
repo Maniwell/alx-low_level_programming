@@ -1,6 +1,7 @@
 #include "main.h"
 /**
-  * is_prime_number - returns 1 if the input integer is a prime number, otherwise returns 0
+  * is_prime_number - returns 1 if the input integer is
+  * a prime number, otherwise returns 0
   * @n: the number to check for primality
   *
   * Return: 1 if n is prime, 0 otherwise
