@@ -52,5 +52,5 @@ int _sqrt_helper(int n, int start, int end)
 		}
 	}
 
-	return (-1);
+	return (n);
 }
